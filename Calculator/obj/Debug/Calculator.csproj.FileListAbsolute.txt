@@ -1,7 +1,0 @@
-C:\Users\eoinm\source\repos\Calculator\Calculator\bin\Debug\Calculator.exe.config
-C:\Users\eoinm\source\repos\Calculator\Calculator\bin\Debug\Calculator.exe
-C:\Users\eoinm\source\repos\Calculator\Calculator\bin\Debug\Calculator.pdb
-C:\Users\eoinm\source\repos\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
-C:\Users\eoinm\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
-C:\Users\eoinm\source\repos\Calculator\Calculator\obj\Debug\Calculator.exe
-C:\Users\eoinm\source\repos\Calculator\Calculator\obj\Debug\Calculator.pdb
