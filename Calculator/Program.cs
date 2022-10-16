@@ -20,6 +20,9 @@ namespace Calculator
                 case "m":
                     result = num1 * num2;
                     break;
+                case "p":
+                    result = Math.Pow(num1,num2);
+                    break;
                 case "d":
                     // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
@@ -79,7 +82,8 @@ namespace Calculator
                 Console.WriteLine("\ts - Subtract");
                 Console.WriteLine("\tm - Multiply");
                 Console.WriteLine("\td - Divide");
-                Console.Write("Your option? ");
+                Console.WriteLine("\tp - Power");
+                Console.Write("Which operator would you like to apply? ");
 
                 string op = Console.ReadLine();
 
@@ -90,7 +94,7 @@ namespace Calculator
                     {
                         Console.WriteLine("This operation will result in a mathematical error.\n");
                     }
-                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                    else Console.WriteLine("Operation result: {0:0.##}\n", result);
                 }
                 catch (Exception e)
                 {
