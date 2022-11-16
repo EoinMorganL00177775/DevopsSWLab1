@@ -2,6 +2,8 @@ using System;
 
 namespace Calculator
 {
+    using System.Runtime.CompilerServices;
+
     class Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
@@ -12,23 +14,20 @@ namespace Calculator
             switch (op)
             {
                 case "a":
-                    result = num1 + num2;
+                    result = Add(num1, num2);
                     break;
                 case "s":
-                    result = num1 - num2;
+                    result = Subtract(num1, num2);
                     break;
                 case "m":
-                    result = num1 * num2;
+                    result = Multiply(num1, num2);
                     break;
                 case "p":
-                    result = Math.Pow(num1,num2);
+                    result = Power(num1, num2);
                     break;
                 case "d":
                     // Ask the user to enter a non-zero divisor.
-                    if (num2 != 0)
-                    {
-                        result = num1 / num2;
-                    }
+                    result = Divide(num1, num2);
                     break;
                 // Return text for an incorrect option entry.
                 default:
@@ -36,7 +35,36 @@ namespace Calculator
             }
             return result;
         }
+
+        public static double Add(double num1, double num2)
+        {
+            return num1 + num2;
+        }
+        public static double Subtract(double num1, double num2)
+        {
+            return num1 - num2;
+        }
+        public static double Multiply(double num1, double num2)
+        {
+            return num1 * num2;
+        }
+        public static double Power(double num1, double num2)
+        {
+            return Math.Pow(num1, num2);
+        }
+        public static double Divide(double num1, double num2)
+        {
+            if (num2 != 0)
+            {
+                return num1 / num2;
+            }
+            else
+            {
+                return 0;
+            }
+        }
     }
+
 
     class Program
     {
