@@ -4,7 +4,7 @@ namespace Calculator
 {
     using System.Runtime.CompilerServices;
 
-    class Calculator
+    public class CalculatorOperations
     {
         public static double DoOperation(double num1, double num2, string op)
         {
@@ -117,7 +117,7 @@ namespace Calculator
 
                 try
                 {
-                    result = Calculator.DoOperation(cleanNum1, cleanNum2, op);
+                    result = CalculatorOperations.DoOperation(cleanNum1, cleanNum2, op);
                     if (double.IsNaN(result))
                     {
                         Console.WriteLine("This operation will result in a mathematical error.\n");
