@@ -4,7 +4,6 @@ namespace Calculator
 {
     using System.Runtime.CompilerServices;
 
-    // Trigger build
     public class CalculatorOperations
     {
         public static double DoOperation(double num1, double num2, string op)
